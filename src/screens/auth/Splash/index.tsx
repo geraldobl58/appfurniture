@@ -10,8 +10,8 @@ export function Splash() {
     <Container>
       <Photo source={logoSplash} />
       <Title>Você encontrará <Subtitle>tudo o que precisa</Subtitle> aqui!</Title>
-      <Button onPress={() => {}} active={true}>Inscreva-se</Button>
-      <Button onPress={() => {}}>Entrar</Button>
+      <Button onPress={() => {}}>Inscreva-se</Button>
+      <Button onPress={() => {}} minimal>Entrar</Button>
     </Container>
   )
 }

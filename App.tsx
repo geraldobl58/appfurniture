@@ -8,6 +8,7 @@ import {
 } from '@expo-google-fonts/montserrat'
 
 import { Splash } from './src/screens/auth/Splash';
+import { Signup } from './src/screens/auth/Signup';
 
 import theme from "./src/styles/theme";
 
@@ -24,7 +25,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Splash />
+      <Signup />
     </ThemeProvider>
   )
 

@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
 
 interface TextProps {
-  active: boolean
+  minimal: boolean
 }
 
 export const BoxContainer = styled.View`
@@ -25,9 +25,9 @@ export const ButtonText = styled.Text<TextProps>`
 
   color: ${({ theme }) => theme.colors.white};
 
-  background-color: ${({ active, theme }) => active 
-    ? theme.colors.primary 
-    : theme.colors.orange
+  background-color: ${({ minimal, theme }) => minimal 
+    ? theme.colors.orange 
+    : theme.colors.primary
   };
 `
 

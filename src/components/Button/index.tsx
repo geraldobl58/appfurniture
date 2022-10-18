@@ -6,14 +6,14 @@ import { BoxContainer, ButtonText } from "./styles";
 interface ButtonProps {
   children: ReactNode
   onPress: () => void
-  active?: boolean
+  minimal?: boolean
 }
 
-export function Button({ children, onPress, active }: ButtonProps) {
+export function Button({ children, onPress, minimal }: ButtonProps) {
   return (
-    <TouchableOpacity activeOpacity={0.6} onPress={onPress}>
+    <TouchableOpacity onPress={onPress}>
       <BoxContainer>
-        <ButtonText active={active}>
+        <ButtonText minimal={minimal}>
           {children}
         </ButtonText>
         </BoxContainer>
